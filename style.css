@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('img/bg2.jpg');
+    /* background: url('img/bg2.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    overflow-x: hidden;
+    background-size: 1900px 1200px;
+    background-attachment: fixed;
+}
+
+.kotak {
+    width: 400px;
+    height: 400px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-52%, -30%);
+}
+
+.kotak img {
+    margin-top: -120px;
+    margin-left: 100px;
+    border-radius: 100px;
+    /* border: 3px solid rgb(0, 0, 0);  */
+    `
+}
+
+.kotak td {
+    display: inline-block;
+    padding: 20px;
+    font-family: 'Arial';
+}
+
+input[type="text"] {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 10px 0px;
+    border-bottom: 1px solid #444;
+    width: 150px;
+    font-family: 'Segoue UI';
+    font-size: 15px;
+    transition: .5s;
+}
+
+input[type="password"] {
+    font-size: 13px;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 10px 0px;
+    border-bottom: 1px solid #444;
+    width: 150px;
+    font-family: 'Segoue UI';
+    transition: .5s;
+}
+
+input[type="submit"] {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 10px 0px;
+    background: #444;
+    width: 100px;
+    color: #fff;
+    font-family: 'Segoue UI';
+    opacity: 0.8;
+    transition: .5s;
+}
+
+input[type="reset"] {
+    font-family: 'Segoue UI';
+    border: none;
+    background: none;
+    outline: none;
+    padding: 10px 0px;
+    background: rgb(194, 29, 29);
+    width: 100px;
+    color: #fff;
+    opacity: 0.8;
+    transition: .5s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-bottom: 1px solid rgb(225, 0, 255);
+    transition: .5s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    /* background: #333;
+     */
+    transition: .5s;
+    opacity: 1;
+}
+
+.nav {
+    position: fixed;
+    overflow-x: hidden;
+    list-style: none;
+    height: 100%;
+    background: #555;
+    /* width: 15%; */
+}
+
+.nav .menu {
+    /* width: 200px; */
+    /* position: absolute; */
+    display: block;
+    height: 80%;
+    overflow-y: hidden;
+    /* width: 200px; */
+    /* position: relative; */
+}
+
+.nav .menu li {
+    /* text-align: center; */
+    /* background: #fff; */
+}
+
+.menu li a {
+
+    padding: 15px 20px;
+    display: block;
+    line-height: 40px;
+    /* padding: 20px 10px; */
+    text-decoration: none;
+    color: #fff;
+    font-family: arial;
+    transition: .5s;
+    /* background: #444; */
+    /* padding: 20px 50px; */
+}
+
+.menu li a:before {
+    content: ' ';
+    position: relative;
+    width: 6px;
+    height: 20px;
+    top: 5px;
+    text-align: center;
+    left: -10px;
+    display: inline-block;
+    background: rgb(255, 255, 255);
+    opacity: 0;
+    transition: .5s;
+}
+
+.menu li a:hover:before {
+    opacity: 1;
+    transition: .5s;
+}
+
+.menu li a:hover {
+
+    transition: .5s;
+    /* text-decoration: none; */
+    /* background: #555; */
+    background: #222;
+}
+
+.nav2 {
+    position: fixed;
+    width: 100%;
+    background: #444;
+    padding: 20px;
+    z-index: -1;
+}
+
+.nav2 p {
+    color: #fff;
+    position: absolute;
+    /* top: 10; */
+    line-height: 0px;
+    left: 220px;
+}
+
+.nav2 .level p {
+    color: #fff;
+    position: absolute;
+    /* top: 10; */
+    line-height: 0px;
+    left: 800px;
+}
+
+.container {
+    position: absolute;
+    top: 230px;
+    right: 20px;
+    width: 82%;
+    z-index: -9;
+}
+
+.container h1 {
+    color: rgb(255, 255, 255);
+    /* background: #555; */
+    font-family: 'Franklin Gothic';
+    position: relative;
+    text-transform: uppercase;
+}
+
+.container hr {
+    width: 210px;
+    text-align: center;
+    /* margin-left: 420px; */
+    border: none;
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.container table {
+    border: none;
+    padding: 20px;
+}
+
+.container table tr {
+    width: 80%;
+    background: #fff;
+    border: none;
+    /* width: 200px; */
+}
+
+.container table tr td {
+    /* width: 80%; */
+    background: #fff;
+    border: none;
+    padding: 20px;
+    font-family: Segoe UI;
+    color: #444;
+    /* width: 100px; */
+    /* padding: 10px 20px; */
+    /* display: inline-block; */
+    /* width: 200px; */
+}
+
+.container table tr th {
+    border: none;
+    padding: 20px;
+    font-family: Segoe UI;
+    color: #444;
+}
+
+.container table tr td a {
+
+    /* padding: 20px 10px; */
+    /* padding: 20px 10px; */
+    /* width: 200px;
+    height: 80px; */
+    color: #444;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 30px;
+}
+
+.container table tr td a:hover {
+    /* background: #444; */
+    color: rgb(255, 0, 221);
+    /* height: 20px; */
+}
+
+.tengahkecil {
+    position: absolute;
+    top: 100px;
+    left: 34%;
+    /* transform: translate(-5%,-10%); */
+    border-collapse: collapse;
+
+}
+
+.tengah {
+    position: absolute;
+    top: 100px;
+    left: 30%;
+    /* transform: translate(-5%,-10%); */
+    border-collapse: collapse;
+
+}
+
+.tengahbesar {
+    position: absolute;
+    top: 80px;
+    left: 25%;
+    /* transform: translate(-5%,-10%); */
+    border-collapse: collapse;
+}
+
+.tengahsesuai {
+    position: absolute;
+    top: 50px;
+    left: 30%;
+    /* transform: translate(-5%,-10%); */
+    border-collapse: collapse;
+}
+
+select {
+    border: none;
+    outline: none;
+    width: 150px;
+    padding: 5px 10px;
+    /* font-family: ; */
+    background: #444;
+    color: #fff;
+    /* -webkit-user-select: none; */
+}
+
+option {
+    font-family: arial;
+}
+
+.navbawah {
+    position: absolute;
+    top: 4%;
+    left: 170px;
+    width: 100%;
+    background: #555;
+    /* float: left; */
+    padding: 10px;
+    z-index: -999;
+}
+
+.navbawah a {
+    width: 100px;
+    color: #fff;
+    line-height: 35px;
+    padding: 10px;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.navbawah a:hover {
+    background: #000;
+    transition: .5s;
+}
+
+span {
+    /* margin-top: -10px; */
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bolder;
+    /* padding: 5px; */
+    /* position: relative;
+    margin-left: 20px; */
+}
+
+span img {
+    /* margin-left: 100px;  */
+    /* padding: 5px; */
+}
+
+td a {
+    border-bottom: 1px solid #fff;
+    transition: .5s;
+}
+
+td a:hover {
+    /* background: #000; */
+    /* color: #000; */
+    /* padding: 10px */
+    border-bottom: 1px solid rgb(243, 0, 252);
+    transition: .5s;
+    /* overflow: hidden; */
+}
+
+/* .tengah{
+    transform: translate(10%, 20%)
+}
+*/
+.nav img {
+    width: 50px;
+    margin-top: 15px;
+    margin-left: 60px;
+}
+
+/* .nav img::before{
+    content: '123';
+    color: white;
+    background: #000;
+    width: 10px;
+    height: 10px;
+}
+/* .menu li span{ */
+/* font-family: 'Bebas Neue';
+    padding: 60px;
+} */
+/* .tengah2{
+    position: absolute;
+} */
+.sambungtable {
+    border-collapse: collapse;
+    position: relative;
+    margin: 20px;
+    margin-left: 400px;
+}
+
+.sambungtable2 {
+    border-collapse: collapse;
+    position: relative;
+    margin: 20px;
+    margin-left: 300px;
+}
+
+.hijau {
+    color: springgreen !important;
+}
+
+.kuning {
+    color: sandybrown !important;
+}
+
+.merah {
+    color: crimson !important;
+}
+
+.biru {
+    color: skyblue !important;
+}
+
+.birutua {
+    color: skyblue !important;
+}
+
+.ungu {
+    color: mediumslateblue !important;
+}
+
+.orange {
+    color: orangered !important;
+}
